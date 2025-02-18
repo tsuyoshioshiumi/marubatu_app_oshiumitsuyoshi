@@ -2,7 +2,7 @@ import SwiftUI
 
 struct CreateView: View {
     @Binding var quizzesArray: [Quiz]
-    @AppStorage("quizData") private var quizData: Data = Data() // キーを統一
+    @AppStorage("quiz") private var quizData: Data = Data() // キーを統一
     var resetCurrentQuestion: () -> Void // ContentViewの currentQuestionNum をリセット
 
     @State private var questionText = ""
